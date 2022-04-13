@@ -13,8 +13,7 @@ a {
     text-decoration: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Jua&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 body {
     background: #222;
@@ -27,6 +26,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5vh 5vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
 }
 
 header h1 {
@@ -67,3 +70,64 @@ header .btnMenu {
     display: none;
 }
 
+figure {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+figure video  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figure .txt {
+    position: absolute;
+    left: 6vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+figure .txt p {
+    font: normal 8vw/1 "Fredericka the Great";
+    color: #fff;
+}
+
+figure .txt ul {
+    display: flex;
+    margin-top: 30px;
+}
+
+figure .txt ul li {
+    margin-right: 25px;
+}
+
+figure .txt ul li i {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+figure .txt ul li strong {
+    font: 14px/1 "arial";
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font: 12px/1 "arial";
+    color: #ddd;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 5vh 5vw;
+    z-index: 2;
+}
